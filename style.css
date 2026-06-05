@@ -72,7 +72,6 @@ nav a:hover{
 
 .hero{
     min-height:100vh;
-
     display:flex;
     align-items:center;
 
@@ -90,67 +89,102 @@ nav a:hover{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:50px;
+    gap:70px;
 }
 
 .hero-text{
     flex:1;
+    text-align:left;
 }
 
 .hero-text h1{
-    font-size:4rem;
-    margin-bottom:10px;
+    font-size:5rem;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
 }
 
 .hero-text h1 span{
-    color:var(--primary);
+    color:#38bdf8;
 }
 
-.hero-text h2{
-    color:var(--muted);
-    /* margin-bottom:20px; */
+.role{
+    font-size:2.4rem;
+    color:#94a3b8;
+    font-weight:600;
+    margin-bottom:30px;
+    text-align:left;
 }
 
 .hero-text p{
-    line-height:1.8;
-    max-width:600px;
+    max-width:650px;
+    color:#dbeafe;
+    font-size:1.15rem;
+    line-height:1.9;
+    margin-bottom:40px;
 }
 
 .hero-buttons{
-    margin-top:30px;
-}
-
-.btn,
-.btn-outline{
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:50px;
-    text-decoration:none;
-    margin-right:15px;
-    transition:.3s;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .btn{
-    background:linear-gradient(135deg,#38bdf8,#818cf8);
+    display:inline-block;
+    padding:15px 30px;
+
+    background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #818cf8
+    );
+
+    border-radius:50px;
+
+    text-decoration:none;
     color:white;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
 }
 
 .btn-outline{
-    border:1px solid var(--primary);
+    display:inline-block;
+    padding:15px 30px;
+
+    border:2px solid #38bdf8;
+
+    border-radius:50px;
+
+    text-decoration:none;
     color:white;
+    font-weight:600;
+
+    transition:.3s;
 }
 
-.btn:hover,
 .btn-outline:hover{
-    transform:translateY(-4px);
+    background:#38bdf8;
+    transform:translateY(-5px);
 }
 
 .hero-image img{
-    width:320px;
-    height:320px;
-    border-radius:50%;
+    width:380px;
+    height:380px;
+
     object-fit:cover;
-    border:5px solid var(--primary);
+
+    border-radius:50%;
+
+    border:5px solid #38bdf8;
+
+    box-shadow:
+    0 0 30px rgba(56,189,248,.4);
 }
 
 /* Sections */
